@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xyloite - Connected Sources</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Using a common monospace and sans-serif stack to match the screenshot -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-section">
+                <h1><span class="text-white">XY</span><span class="text-teal">LOITE</span></h1>
+                <div class="subtitle">INTELLIMESH &middot; DOC FABRIC</div>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-title">INGEST</div>
+                <a href="#" class="nav-item active" id="nav-dashboard">
+                    <span class="nav-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                    </span>
+                    <span class="nav-label">Connected sources</span>
+                    <span class="nav-channel">CH01</span>
+                </a>
+                <a href="#" class="nav-item" id="nav-file-explorer">
+                    <span class="nav-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="nav-label">File explorer</span>
+                    <span class="nav-channel">CH02</span>
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-title">UNDERSTAND</div>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </span>
+                    <span class="nav-label">Document chat</span>
+                    <span class="nav-channel">CH03</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </span>
+                    <span class="nav-label">OCR extraction</span>
+                    <span class="nav-channel">CH04</span>
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-title">PREDICT</div>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </span>
+                    <span class="nav-label">ML modules</span>
+                    <span class="nav-channel">CH05</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="9" y1="3" x2="9" y2="21"></line>
+                        </svg>
+                    </span>
+                    <span class="nav-label">Workflow studio</span>
+                    <span class="nav-channel">CH06</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </span>
+                    <span class="nav-label">Prediction output</span>
+                    <span class="nav-channel">CH07</span>
+                </a>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="status-indicator">
+                    <span class="dot online"></span>
+                    <span class="status-text">MCP gateway &middot; online</span>
+                </div>
+                <div class="status-meta">7 servers &middot; 4 plants</div>
+                <div class="status-meta">build 2.4.1-rc3</div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div id="view-dashboard">
+                <header class="top-header">
+                    <div class="header-titles">
+                        <h2>CONNECTED SOURCES</h2>
+                        <span class="header-subtitle">MCP ingest layer</span>
+                    </div>
+                    <div class="header-controls">
+                        <div class="plant-selector">
+                            <span class="dot online"></span> Plant &middot; Coimbatore Unit II
+                        </div>
+                        <div class="last-sync">Last sync 00:02:14 ago</div>
+                        <button class="btn-sync">Sync all</button>
+                    </div>
+                </header>
+
+                <!-- Stats Row -->
+                <section class="stats-row">
+                    <div class="stat-card">
+                        <div class="stat-title">INDEXED FILES</div>
+                        <div class="stat-value">41,284</div>
+                        <div class="stat-sub">+312 since 06:00</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-title">SOURCES CONNECTED</div>
+                        <div class="stat-value">7</div>
+                        <div class="stat-sub">1 degraded</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-title">PAGES OCR-EXTRACTED</div>
+                        <div class="stat-value">268,410</div>
+                        <div class="stat-sub">98.1% first-pass</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-title">WORKFLOWS LIVE</div>
+                        <div class="stat-value">3</div>
+                        <div class="stat-sub">14 predictions/run</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-title">STORAGE REFERENCED</div>
+                        <div class="stat-value">1.4 TB</div>
+                        <div class="stat-sub">nothing copied out of plant</div>
+                    </div>
+                </section>
+
+                <!-- Connectors Section -->
+                <section class="connectors-section">
+                    <header class="section-header">
+                        <h3>MCP CONNECTORS</h3>
+                        <span class="section-desc">each source is mounted through a Model Context Protocol server
+                            &mdash; no data is copied out of the plant</span>
+                    </header>
+
+                    <div class="connectors-grid" id="connectors-container">
+                        <!-- Cards will be dynamically injected here by JS -->
+                    </div>
+                </section>
+            </div>
+
+            <div id="view-file-explorer" class="hidden file-explorer-layout">
+                <!-- Left Panel: Folders -->
+                <aside class="panel folder-panel">
+                    <div class="panel-header">
+                        <h2>Folders</h2>
+                    </div>
+                    <div class="panel-content" id="folder-list">
+                        <div class="loading">Loading folders...</div>
+                    </div>
+                </aside>
+
+                <!-- Middle Panel: Files -->
+                <section class="panel file-panel">
+                    <div class="panel-header"
+                        style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <h2>Files</h2>
+                            <div class="breadcrumb" id="current-path">/</div>
+                        </div>
+                        <input type="search" id="explorer-search" placeholder="Search files & folders..."
+                            style="padding: 6px 12px; border-radius: 4px; border: 1px solid var(--border-color); background: var(--bg-dark); color: #fff; outline: none; width: 250px; font-family: var(--font-sans); font-size: 13px;">
+                    </div>
+                    <div class="panel-content">
+                        <table class="file-table" id="file-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                </tr>
+                            </thead>
+                            <tbody id="file-list">
+                                <tr>
+                                    <td colspan="3" class="empty-state">Select a folder to view files</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Right Panel: Metadata & Preview -->
+                <aside class="panel details-panel">
+                    <div class="panel-header">
+                        <h2>Details</h2>
+                    </div>
+                    <div class="panel-content" id="details-content">
+                        <div class="empty-state">Select a file to view details</div>
+                    </div>
+                </aside>
+            </div>
+
+        </main>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>

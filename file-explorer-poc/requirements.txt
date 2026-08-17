@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+boto3
+azure-storage-blob
+google-cloud-storage
+smbprotocol
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+msal
+requests

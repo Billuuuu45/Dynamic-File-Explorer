@@ -1,0 +1,12 @@
+File Explorer POC - User Manual
+
+1. Introduction
+This is a simple File Explorer built with FastAPI and vanilla JavaScript.
+
+2. Architecture
+The backend uses a Connector pattern. We have an IConnector interface, and currently a LocalConnector implementation. In the future, an MCPConnector can be plugged in without changing the UI or the Service layer!
+
+3. Usage
+- Click on folders in the left pane.
+- Click on files in the middle pane.
+- View details and contents in the right pane.
